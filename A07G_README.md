@@ -108,3 +108,22 @@ This suggests that while the regulator is capable of supplying the required curr
 Overall, the regulator is functional and capable of supporting the required load, but improvements are needed to enhance voltage stability and reduce load-induced voltage drop.
 
 ### 2.4 Thermal Image
+
+
+## 3. Programming
+
+![succ](./image/success_load.png)
+
+## 4. Peripheral Evaluation
+
+### 4.1 Debug LED
+Will be toggled when the button pressed
+
+### 4.2 Debug Button
+Will togger the LED when press
+
+### 4.3 UART Communication
+Print "Press!" when the button pressed
+
+### 4.4 I2C Device
+Receive the acc data from IMU DEV board.
