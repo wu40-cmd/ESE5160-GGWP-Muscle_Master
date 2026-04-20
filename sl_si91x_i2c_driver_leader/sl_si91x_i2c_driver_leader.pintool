@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ASCII"?>
+<device:XMLDevice xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:device="http://www.silabs.com/ss/hwconfig/document/device.ecore" name="pin_tool.siwg917y121mgaba" partId="mcu.arm.wfm.siwg917y121mgaba" contextId="com.silabs.sdk.stack.sisdk:2025.6.3._-767927727-2373502478">
+  <mode name="DefaultMode">
+    <property object="DefaultMode" propertyId="mode.diagramLocation" value="100, 100"/>
+    <property object="I2C0" propertyId="ABModule.selectedRequirement" value="i2c0%T%SL_I2C0%T%sl_si91x_i2c_init_i2c0_config.h"/>
+    <property object="I2C0" propertyId="ABPeripheral.included" value="true"/>
+    <property object="PORTIO" propertyId="portio.i2c0.enable.scl" value="Enabled"/>
+    <property object="PORTIO" propertyId="portio.i2c0.enable.sda" value="Enabled"/>
+    <property object="PORTIO" propertyId="portio.ulp_i2c.enable.scl" value="Enabled"/>
+    <property object="PORTIO" propertyId="portio.ulp_i2c.enable.sda" value="Enabled"/>
+    <property object="PORTIO" propertyId="portio.ulp_i2c.location.scl" value="1"/>
+    <property object="PORTIO" propertyId="portio.ulp_i2c.location.sda" value="6"/>
+    <property object="ULP_I2C" propertyId="ABModule.selectedRequirement" value="ulp_i2c%T%SL_ULP_I2C%T%sl_si91x_i2c_init_i2c2_config.h"/>
+    <property object="ULP_I2C" propertyId="ABPeripheral.included" value="true"/>
+  </mode>
+  <modeTransition>
+    <property object="RESET &#x2192; DefaultMode" propertyId="modeTransition.source" value="RESET"/>
+    <property object="RESET &#x2192; DefaultMode" propertyId="modeTransition.target" value="DefaultMode"/>
+  </modeTransition>
+</device:XMLDevice>

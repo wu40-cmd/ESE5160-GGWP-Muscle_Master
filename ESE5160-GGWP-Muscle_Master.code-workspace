@@ -1,0 +1,16 @@
+{
+    "folders": [
+        {
+            "path": "..\\a06g-freertos-i2c-s26-t27-ggwp\\concurrency_challenge_rtos"
+        },
+        {
+            "name": "concurrency_challenge_silabs",
+            "path": "../a06g-freertos-i2c-s26-t27-ggwp/concurrency_challenge_silabs"
+        },
+        {
+            "name": "MM_i2c_test",
+            "path": "MM_i2c_test"
+        }
+    ],
+    "siWorkspaceRoot": "C:\\Users\\wsanu\\SimplicityStudio\\ESE5160-GGWP-Muscle_Master"
+}
