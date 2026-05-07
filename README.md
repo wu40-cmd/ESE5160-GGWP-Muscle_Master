@@ -1,120 +1,117 @@
-# Final Project
+# GGWP Muscle Master
 
-**Team Number:**
+Wearable IoT rehabilitation system for gait symmetry and EMG analysis.
 
-**Team Name:**
+---
 
-| Team Member Name | Email Address       |
-|------------------|---------------------|
-| [Name 1]         | [Email 1]           |
-| [Name 2]         | [Email 2]           |
-| [Name 3]         | [Email 3]           |
+## Project Overview
 
-**GitHub Repository URL:**
+GGWP Muscle Master is a wearable embedded IoT device designed for lower-limb rehabilitation monitoring and gait symmetry evaluation.
 
-**GitHub Pages Website URL:** [for final submission]*
+The system combines IMU motion sensing and surface EMG acquisition to monitor walking patterns, detect gait asymmetry, and evaluate muscle compensation behavior during rehabilitation exercises.
 
-## Final Project Proposal
+Sensor data is transmitted through Wi-Fi using MQTT communication, while advanced gait analysis and rehabilitation evaluation are processed on a cloud server.
 
-### 1. Abstract
+---
 
-### 2. Motivation
+## Features
 
-### 3. System Block Diagram
+- IMU gait sensing
+- Surface EMG acquisition
+- MQTT cloud communication
+- OTA firmware update
+- Wi-Fi wearable system
+- Cloud-based gait analysis
+- Buzzer feedback alerts
+- Real-time Node-RED visualization
 
-### 4. Design Sketches
+---
 
-### 5. Software Requirements Specification (SRS)
+## System Overview
 
-**5.1 Definitions, Abbreviations**
+![System Diagram](docs/diagrams/system_architecture.png)
 
-Here, you will define any special terms, acronyms, or abbreviations you plan to use for hardware
+---
 
-**5.2 Functionality**
+## PCB Design
 
-| ID     | Description                                                                                                                                                                                                              |
-| ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| SRS-01 | The IMU 3-axis acceleration will be measured with 16-bit depth every 100 milliseconds +/-10 milliseconds                                                                                                                 |
-| SRS-02 | The distance sensor shall operate and report values at least every .5 seconds.                                                                                                                                           |
-| SRS-03 | Upon non-nominal distance detected (i.e., the trap mechanism has changed at least 10 cm from the nominal range), the system shall be able to detect the change and alert the user in a timely manner (within 5 seconds). |
-| SRS-04 | Upon a request from the user, the system shall get an image from the internal camera and upload the image to the user system within 10s.                                                                                 |
+![PCB Render](docs/pcb_render/pcb_render.png)
 
-### 6. Hardware Requirements Specification (HRS)
+---
 
-**6.1 Definitions, Abbreviations**
+## Hardware Prototype
 
-Here, you will define any special terms, acronyms, or abbreviations you plan to use for hardware
+![Device Photo](media/photos/device_photo.jpg)
 
-**6.2 Functionality**
+---
 
-| ID     | Description                                                                                                                        |
-| ------ | ---------------------------------------------------------------------------------------------------------------------------------- |
-| HRS-01 | A distance sensor shall be used for obstacle detection. The sensor shall detect obstacles at a maximum distance of at least 10 cm. |
-| HRS-02 | A noisemaker shall be inside the trap with a strength of at least 55 dB.                                                           |
-| HRS-03 | An electronic motor shall be used to reset the trap remotely and have a torque of 40 Nm in order to reset the trap mechanism.      |
-| HRS-04 | A camera sensor shall be used to capture images of the trap interior. The resolution shall be at least 480p.                       |
+## Demo
 
-### 7. Bill of Materials (BOM)
+<video src="media/demo/demo.MP4" controls width="800"></video>
 
+---
 
-### 8. Final Demo Goals
+## Hardware Stack
 
+- Silicon Labs SIWG917Y121MGABA
+- IMU Sensor (I2C)
+- Surface EMG Front-End
+- Buzzer Alert System
+- Li-ion Battery Power
 
-### 9. Sprint Planning
+---
 
-| Milestone  | Functionality Achieved | Distribution of Work |
-| ---------- | ---------------------- | -------------------- |
-| Sprint #1  |                        |                      |
-| Sprint #2  |                        |                      |
-| MVP Demo   |                        |                      |
-| Final Demo |                        |                      |
+## Software Stack
 
-**This is the end of the Project Proposal section. The remaining sections will be filled out based on the milestone schedule.**
+- Embedded C
+- FreeRTOS
+- MQTT
+- Wi-Fi
+- OTA
+- Node-RED
+- Cloud Data Processing
 
-## Sprint Review #1
+---
 
-### Last week's progress
+## Repository Structure
 
-### Current state of project
+```text
+GGWP-Muscle-Master/
+│
+├── docs/
+├── firmware/
+├── hardware/
+├── cloud/
+├── node-red/
+├── media/
+└── test/
+```
 
-### Next week's plan
+---
 
-## Sprint Review #2
+## Applications
 
-### Last week's progress
+- Rehabilitation monitoring
+- Gait symmetry evaluation
+- Muscle compensation detection
+- Wearable health monitoring
 
-### Current state of project
+---
 
-### Next week's plan
+## Technologies
 
-## MVP Demo
+- Embedded Systems
+- FreeRTOS
+- MQTT
+- OTA
+- IoT
+- Wearable Devices
+- PCB Design
+- Cloud Analytics
+- Altium Designer
 
-## Final Report
+---
 
-Don't forget to make the GitHub pages public website!
-If you’ve never made a GitHub pages website before, you can follow this webpage (though, substitute your final project repository for the GitHub username one in the quickstart guide):  [https://docs.github.com/en/pages/quickstart](https://docs.github.com/en/pages/quickstart)
+## License
 
-### 1. Video
-
-### 2. Images
-
-### 3. Results
-
-#### 3.1 Software Requirements Specification (SRS) Results
-
-| ID     | Description                                                                                               | Validation Outcome                                                                          |
-| ------ | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
-| SRS-01 | The IMU 3-axis acceleration will be measured with 16-bit depth every 100 milliseconds +/-10 milliseconds. | Confirmed, logged output from the MCU is saved to "validation" folder in GitHub repository. |
-
-#### 3.2 Hardware Requirements Specification (HRS) Results
-
-| ID     | Description                                                                                                                        | Validation Outcome                                                                                                      |
-| ------ | ---------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| HRS-01 | A distance sensor shall be used for obstacle detection. The sensor shall detect obstacles at a maximum distance of at least 10 cm. | Confirmed, sensed obstacles up to 15cm. Video in "validation" folder, shows tape measure and logged output to terminal. |
-|        |                                                                                                                                    |                                                                                                                         |
-
-### 4. Conclusion
-
-
-## References
-
+This project is intended for educational and research purposes.
